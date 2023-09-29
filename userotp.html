@@ -1,0 +1,13 @@
+<h1 id="otp"></h1>
+<button type="button" onclick="sendotp()">send</button>
+
+<script type="text/javascript">
+
+    let getotp = JSON.parse(localStorage.getItem('otp'));
+    document.getElementById('otp').innerHTML = "OTP ="+getotp.OTP;
+
+    function sendotp(){
+        window.location.href = "otp.html";
+    }
+
+</script>
